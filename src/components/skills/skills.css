@@ -1,0 +1,67 @@
+.experience-section {
+  margin: 0 auto;
+}
+
+.tools-grid-area {
+  margin-top: 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.tool-card {
+  padding: 2rem 3rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.tool-image {
+  margin: auto;
+  max-height: 10rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1150px) {
+  .tool-card {
+    max-height: 14rem;
+    max-width: 14rem;
+  }
+
+  .tool-image {
+    max-height: 7rem;
+    max-width: 7rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .tools-grid-area {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .tools-grid-area {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tool-card {
+    max-height: 10rem;
+    max-width: 10rem;
+  }
+
+  .tool-image {
+    max-height: 4rem;
+    max-width: 4rem;
+  }
+  .tool-card {
+    padding: 2rem 3rem;
+    margin: 0.8rem;
+    text-align: center;
+  }
+  .tools-grid-area {
+    row-gap: 0;
+  }
+}

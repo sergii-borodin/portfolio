@@ -1,0 +1,114 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  border-bottom: 0.01rem solid black;
+  z-index: 10;
+}
+
+.navbar-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.navbar-list-container-mobile-view {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 60rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background-color: rgba(255, 235, 205, 0.9);
+
+  transition: transform 2s;
+  /* transition: all 1.5s ease-out; */
+}
+
+.dark-mode .navbar-list-container-mobile-view {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.navbar-list-container-mobile-view .link {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.burger-menu-button {
+  display: none;
+}
+
+.dark-mode .navbar-list-container {
+  border-bottom: 0.01rem solid white;
+}
+
+.link {
+  padding: 0.5rem 2rem;
+}
+
+.link,
+.mode-control-button {
+  cursor: pointer;
+}
+
+.mode-interface-container {
+  margin: 0 3rem;
+  width: 6rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.mode-control-button,
+.burger-menu-button {
+  background-color: inherit;
+}
+
+.mode-control-button:hover {
+  color: rgb(208, 156, 11);
+}
+
+.dark-mode .mode-control-button {
+  color: rgba(255, 235, 205);
+}
+
+.dark-mode .mode-control-button:hover {
+  color: rgb(208, 156, 11);
+}
+
+@media screen and (max-width: 1000px) {
+  .link {
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .navbar-list-container {
+    display: none;
+  }
+  .burger-menu-button {
+    display: block;
+    margin: 0 3rem;
+  }
+  .header-container {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+}
+
+/* @media screen and (max-width: 320px) {
+  .navbar-list-container {
+    display: none;
+  }
+  .burger-menu-button {
+    display: block;
+  }
+} */

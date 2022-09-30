@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover);
+}
+
+:root {
+  --color-background-dark-mode: rgba(0, 0, 0, 1);
+  --color-background-light-mode: rgba(255, 235, 205);
+  --color-background-shadow-mode: rgba(255, 255, 255);
+
+  --color-primary-dark-mode: rgba(255, 235, 205);
+  --color-primary-light-mode: rgb(41, 28, 28);
+  --color-primary-shadow-mode: rgba(255, 255, 255);
+
+  --color-dark-mode: rgba(255, 255, 255);
+  --color-light-light-mode: rgb(12, 2, 32);
+  --color-shadow-mode: rgba(255, 255, 255);
+
+  --color-hover: rgb(208, 156, 11);
+
+  --container-width-large: 75%;
+  --container-width-medium: 86%;
+  --container-width-small: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.dark-mode .active {
+  border-radius: 2rem;
+  background: rgb(0, 0, 0);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgb(208, 156, 11);
+  transition: all 1s ease-out;
+}
+
+.light-mode .active {
+  border-radius: 2rem;
+  background: rgb(221, 226, 162);
+  box-shadow: 1rem 1rem 1rem rgb(188, 192, 138);
+  transition: all 1s ease-out;
+}
+
+.dark-mode {
+  background-color: var(--color-background-dark-mode);
+  color: var(--color-primary-dark-mode);
+}
+
+.light-mode {
+  background-color: var(--color-background-light-mode);
+  color: var(--color-primary-light-mode);
+}
+
+.light-mode .box-shadow {
+  border-radius: 3rem;
+  background: rgb(221, 226, 162);
+  box-shadow: 1rem 1rem 1rem rgb(189, 193, 139);
+}
+
+.dark-mode .box-shadow {
+  border-radius: 3rem;
+  background: rgb(0, 0, 0);
+  box-shadow: 0.1rem 0.5rem 1rem 0.1rem rgb(208, 156, 11);
+}
+
+.section {
+  height: 100vh;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.dark-mode {
+  background-color: var(--color-background-dark-mode);
+}
+
+.section-title {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .section {
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+}
