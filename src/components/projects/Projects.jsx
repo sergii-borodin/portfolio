@@ -11,7 +11,7 @@ export const Projects = () => {
       id: 1,
       title: 'Kaospilot-toolbox',
       description:
-        'This is a final project within the educational process of a 9-month intensive frontend web developer course from HackYourFuture Denmark school. To build this project we used HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, KnexJS, Storybook, Docker and Swagger. During this project I was responsible to create filtering logic, combining frontend and backend, making more exposed composition, creating smart components and dump components, working with styling. It was a close-to real-world product-building process using modern agile scrum methodology. We used Git as a version control system, Jira as a project management system, and Figma as a UI/UX design application.',
+        'To build this project we used HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, KnexJS, Storybook, Docker and Swagger. During this project I was responsible to create filtering logic, combining frontend and backend, making more exposed composition, creating smart components and dump components, working with styling. It was a close-to real-world product-building process using modern agile scrum methodology.',
       src: project1,
       demoLink: 'https://staging-kp-toolbox-fp-class21.herokuapp.com/',
       codeLink: 'https://github.com/HackYourFuture-CPH/kp-toolbox-fp-class21',
@@ -35,9 +35,9 @@ export const Projects = () => {
             <li key={id} className='project-card box-shadow'>
               <div className='project-card-image-container'>
                 <img className='project-card-image' src={src} alt={title} />
-                <div className='overlay'>
-                  <h3 className='overlay-title'>{title}</h3>
-                  <p>{description}</p>
+                <div className='project-overlay'>
+                  <h3 className='project-title'>{title}</h3>
+                  <p className='project-description'>{description}</p>
                 </div>
               </div>
               <div className='project-card-interface'>

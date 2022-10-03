@@ -9,6 +9,7 @@ import './header.css'
 
 export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   return (
     <header className='header-container'>
       <div className='mode-interface-container'>
@@ -17,7 +18,7 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
           onClick={() => setIsLightModeOn(!isLightModeOn)}
         >
           {isLightModeOn ? (
-            <div>
+            <div style={{ color: 'black' }}>
               <BsSun size={25} />
               <p>Light-mode on</p>
             </div>

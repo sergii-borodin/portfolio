@@ -1,6 +1,6 @@
 .experience-section {
-  display: flex;
   padding-top: 7rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

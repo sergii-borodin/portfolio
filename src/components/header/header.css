@@ -6,7 +6,7 @@
   width: 100%;
   position: fixed;
   backdrop-filter: blur(10px);
-  border-bottom: 0.01rem solid black;
+  border-bottom: 0.01rem solid var(--color-background-dark-mode);
   z-index: 10;
 }
 
@@ -28,13 +28,13 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  background-color: rgba(255, 235, 205);
+  background-color: var(--color-background-light-mode);
 
   transition: transform 2s;
 }
 
 .dark-mode .navbar-list-container-mobile-view {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--color-background-dark-mode);
 }
 
 .navbar-list-container-mobile-view .link {
@@ -47,7 +47,7 @@
 }
 
 .dark-mode .header-container {
-  border-bottom: 0.01rem solid white;
+  border-bottom: 0.01rem solid var(--color-background-light-mode);
 }
 
 .link {
@@ -78,7 +78,7 @@
 }
 
 .dark-mode .mode-control-button {
-  color: rgba(255, 235, 205);
+  color: var(--color-primary-dark-mode);
 }
 
 .dark-mode .mode-control-button:hover,

@@ -26,23 +26,19 @@ a:focus {
 }
 
 :root {
-  --color-background-dark-mode: rgba(0, 0, 0, 1);
+  --color-background-dark-mode: rgb(0, 0, 0);
   --color-background-light-mode: rgba(255, 235, 205);
-  --color-background-shadow-mode: rgba(255, 255, 255);
 
   --color-primary-dark-mode: rgba(255, 235, 205);
   --color-primary-light-mode: rgb(41, 28, 28);
-  --color-primary-shadow-mode: rgba(255, 255, 255);
 
-  --color-dark-mode: rgba(255, 255, 255);
-  --color-light-light-mode: rgb(12, 2, 32);
-  --color-shadow-mode: rgba(255, 255, 255);
+  --color-accent-light-mode: rgb(221, 226, 162);
+  --color-accent-dark-mode: rgb(0, 0, 0);
+
+  --color-shadow-light-mode: rgb(188, 192, 138);
+  --color-shadow-dark-mode: rgb(208, 156, 11);
 
   --color-hover: rgb(208, 156, 11);
-
-  --container-width-large: 75%;
-  --container-width-medium: 86%;
-  --container-width-small: 90%;
 }
 
 html {
@@ -56,15 +52,15 @@ body {
 
 .dark-mode .active {
   border-radius: 2rem;
-  background: rgb(0, 0, 0);
-  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgb(208, 156, 11);
+  background-color: var(--color-accent-dark-mode);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem var(--color-shadow-dark-mode);
   transition: all 0.5s ease-out;
 }
 
 .light-mode .active {
   border-radius: 2rem;
-  background: rgb(221, 226, 162);
-  box-shadow: 1rem 1rem 1rem rgb(188, 192, 138);
+  background-color: var(--color-accent-light-mode);
+  box-shadow: 1rem 1rem 1rem var(--color-shadow-light-mode);
   transition: all 1s ease-out;
 }
 
@@ -80,14 +76,14 @@ body {
 
 .light-mode .box-shadow {
   border-radius: 3rem;
-  background: rgb(221, 226, 162);
-  box-shadow: 1rem 1rem 1rem rgb(189, 193, 139);
+  background-color: var(--color-accent-light-mode);
+  box-shadow: 1rem 1rem 1rem var(--color-shadow-light-mode);
 }
 
 .dark-mode .box-shadow {
   border-radius: 3rem;
-  background: rgb(0, 0, 0);
-  box-shadow: 0.1rem 0.5rem 1rem 0.1rem rgb(208, 156, 11);
+  background-color: var(--color-accent-dark-mode);
+  box-shadow: 0.1rem 0.5rem 1rem 0.1rem var(--color-shadow-dark-mode);
 }
 
 .section {
