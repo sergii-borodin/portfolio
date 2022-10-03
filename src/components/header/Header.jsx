@@ -23,7 +23,7 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
             </div>
           ) : (
             <div>
-              <BsMoonStarsFill size={20} />
+              <BsMoonStarsFill size={20} color='rgba(255, 235, 205)' />
               <p>Dark-mode on</p>
             </div>
           )}
@@ -105,12 +105,12 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
           {isMobileMenuOpen ? (
             <RiCloseLine
               size={25}
-              color={`${isLightModeOn ? 'black' : 'rgb(255, 255, 255)'}`}
+              color={`${isLightModeOn ? 'black' : 'rgba(255, 235, 205)'}`}
             />
           ) : (
             <GiHamburgerMenu
               size={25}
-              color={`${isLightModeOn ? 'black' : 'rgb(255, 255, 255)'}`}
+              color={`${isLightModeOn ? 'black' : 'rgba(255, 235, 205)'}`}
             />
           )}
         </button>
