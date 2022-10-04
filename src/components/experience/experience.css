@@ -93,6 +93,7 @@
   }
   .card-image-container {
     margin: auto;
+    margin-top: 2rem;
   }
   .card-image {
     width: 15rem;
