@@ -1,5 +1,4 @@
 .hero-section {
-  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,11 +40,11 @@
 }
 
 .download-CV {
-  max-width: 20rem;
+  width: 18rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   margin-top: 2rem;
 }
 

@@ -1,9 +1,45 @@
 .experience-section {
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.card-link:hover {
+  color: inherit;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--color-primary-light-mode);
+}
+
+.dark-mode .hover-underline-animation {
+  color: var(--color-primary-dark-mode);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary-light-mode);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.dark-mode .hover-underline-animation:after {
+  background-color: var(--color-primary-dark-mode);
+}
+
+.card-link:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .experience-card {
@@ -19,7 +55,11 @@
 }
 
 .card-description-container {
-  margin: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem 2rem;
 }
 
 .card-image {
@@ -30,11 +70,14 @@
 }
 
 .card-title {
-  margin: 2rem 4rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
 }
 
 .card-description {
-  margin: 0 2rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 980px) {
@@ -55,6 +98,7 @@
 
   .card-title {
     margin: 1rem 2rem;
+    letter-spacing: 0.2rem;
   }
 
   .card-description {

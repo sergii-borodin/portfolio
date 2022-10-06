@@ -43,17 +43,19 @@ export const Projects = () => {
               <div className='project-card-interface'>
                 <a
                   className='project-card-button'
+                  target='_blank'
                   rel='noopener noreferrer'
                   href={demoLink}
                 >
-                  demo
+                  Demo
                 </a>
                 <a
                   className='project-card-button'
+                  target='_blank'
                   rel='noopener noreferrer'
                   href={codeLink}
                 >
-                  code
+                  Code
                 </a>
               </div>
             </li>

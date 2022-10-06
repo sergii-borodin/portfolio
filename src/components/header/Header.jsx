@@ -18,13 +18,13 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
           onClick={() => setIsLightModeOn(!isLightModeOn)}
         >
           {isLightModeOn ? (
-            <div style={{ color: 'black' }}>
+            <div>
               <BsSun size={25} />
               <p>Light-mode on</p>
             </div>
           ) : (
             <div>
-              <BsMoonStarsFill size={20} color='rgba(255, 235, 205)' />
+              <BsMoonStarsFill size={20} />
               <p>Dark-mode on</p>
             </div>
           )}

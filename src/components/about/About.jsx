@@ -15,7 +15,7 @@ export const About = () => {
         <Contacts />
         <a href={CV} download className='download-CV box-shadow'>
           <p>Download CV</p>
-          <RiDownload2Line size={40} />
+          <RiDownload2Line size={24} />
         </a>
       </div>
       <div className='hero-image-container box-shadow'>
