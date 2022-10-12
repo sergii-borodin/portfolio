@@ -72,6 +72,7 @@
 .mode-control-button,
 .burger-menu-button {
   background-color: inherit;
+  color: inherit;
 }
 
 .mode-control-button:hover,
