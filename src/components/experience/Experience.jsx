@@ -52,7 +52,7 @@ export const Experience = () => {
                   <span className='hover-underline-animation'>
                     GOIT Ukraine
                   </span>
-                  , Web Development |<br /> Nov 2020 – Mar 2021
+                  , Web Development | Nov 2020 – Mar 2021
                 </h3>
                 <p className='card-description'>
                   Coding bootcamp designed to cover basic aspects of web

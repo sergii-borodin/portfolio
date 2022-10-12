@@ -46,7 +46,7 @@
   display: flex;
   margin: 3rem auto;
   max-width: 60rem;
-  height: 15rem;
+  height: 16rem;
 }
 
 .card-image-container {
@@ -56,7 +56,6 @@
 
 .card-description-container {
   display: flex;
-  gap: 1rem;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 2rem 2rem;
@@ -97,33 +96,34 @@
   }
 
   .card-title {
+    font-size: 1rem;
     margin: 1rem 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
   }
 
   .card-description {
-    margin: 0 1rem;
+    margin: 1rem 1rem;
   }
 }
 
 @media screen and (max-width: 660px) {
   .experience-card {
-    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 27rem;
+    height: 32rem;
+  }
+
+  .card-image-container {
+    margin: auto;
+    margin-top: 2rem;
   }
 
   .card-image {
-    width: 10rem;
-    height: 7rem;
-  }
-
-  .card-title {
-    margin: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  .card-description {
-    margin: 0 1rem;
-    font-size: 0.8rem;
+    margin-top: 2rem;
+    width: 18rem;
+    height: 12rem;
   }
 }
 
@@ -133,14 +133,21 @@
     flex-direction: column;
     margin: 2rem auto;
     max-width: 22rem;
-    height: 22rem;
+    height: 27rem;
   }
-  .card-image-container {
-    margin: auto;
-    margin-top: 2rem;
-  }
+
   .card-image {
     width: 15rem;
     height: 8rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.2;
+  }
+
+  .card-description {
+    margin: 0 1rem;
+    font-size: 0.8rem;
   }
 }
