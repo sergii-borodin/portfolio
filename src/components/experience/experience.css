@@ -6,42 +6,6 @@
   justify-content: center;
 }
 
-.card-link:hover {
-  color: inherit;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: var(--color-primary-light-mode);
-}
-
-.dark-mode .hover-underline-animation {
-  color: var(--color-primary-dark-mode);
-}
-
-.hover-underline-animation:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-primary-light-mode);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.dark-mode .hover-underline-animation:after {
-  background-color: var(--color-primary-dark-mode);
-}
-
-.card-link:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .experience-card {
   display: flex;
   margin: 3rem auto;
