@@ -1,12 +1,14 @@
 import React from 'react'
-import hero from '../../assets/hero/hero-image1.jpeg'
+import hero from '../../assets/hero/hero-image-light.jpeg'
+import darkHero from '../../assets/hero/hero-image-dark.jpeg'
+
 import { Contacts } from '../contacts/Contacts'
 import CV from '../../assets/CV/CV.pdf'
 import { RiDownload2Line } from 'react-icons/ri'
 
 import './about.css'
 
-export const About = () => {
+export const About = ({isLightModeOn}) => {
   return (
     <section name='aboutMe' className='section hero-section main-container'>
       <div className='about-title-container'>
@@ -19,7 +21,7 @@ export const About = () => {
         </a>
       </div>
       <div className='hero-image-container box-shadow'>
-        <img className='hero-image' src={hero} alt='Sergii' />
+        <img className='hero-image' src={isLightModeOn ? hero : darkHero} alt='Sergii' />
       </div>
     </section>
   )

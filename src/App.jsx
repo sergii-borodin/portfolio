@@ -37,7 +37,7 @@ function App() {
         setIsLightModeOn={setIsLightModeOn}
         isLightModeOn={isLightModeOn}
       />
-      <About />
+      <About isLightModeOn={ isLightModeOn} />
       <Skills />
       <Projects />
       <Experience />
