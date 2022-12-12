@@ -2,6 +2,8 @@ import React from 'react'
 
 import project1 from '../../assets/projects/kaospilot-toolbox.jpg'
 import project2 from '../../assets/projects/meal-sharing.jpg'
+import project3 from '../../assets/projects/ice-cream-shop.jpg'
+
 
 import './projects.css'
 
@@ -24,6 +26,15 @@ export const Projects = () => {
         'It is a test project to practice HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, Docker, and KnexJS. Meal-Sharing is an app where everybody can create an event to share a meal with some random people. Everybody can join if there are enough available places. In this project, I built the backend and frontend self.',
       demoLink: 'https://meal-sharing-class21-sergii.herokuapp.com/',
       codeLink: 'https://github.com/sergii-borodin/meal-sharing',
+    },
+    {
+      id: 3,
+      src: project3,
+      title: 'Ice cream web shop',
+      description:
+        'An ice cream web shop is a landing page website made in collaboration with classmates to practice HTML, CSS, JavaScript, and Sass. As a bundler on the project, we used Parcel - a simple and fast solution for this type of project.',
+      demoLink: 'https://xxamnesiaxx.github.io/itcats/',
+      codeLink: 'https://github.com/xxAmnesiAxx/itcats',
     },
   ]
   return (
