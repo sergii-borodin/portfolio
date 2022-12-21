@@ -64,6 +64,12 @@
   font-weight: 300;
 }
 
+.alert {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(255, 0, 0);
+}
+
 .project-card-image-container:hover .project-overlay {
   transform: translateY(0);
 }
