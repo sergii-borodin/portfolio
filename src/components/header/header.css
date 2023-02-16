@@ -61,14 +61,6 @@
   cursor: pointer;
 }
 
-.mode-interface-container {
-  margin: 0 3rem;
-  width: 6rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-}
-
 .mode-control-button,
 .burger-menu-button {
   background-color: inherit;

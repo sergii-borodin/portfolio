@@ -4,6 +4,7 @@ import { BsMoonStarsFill } from 'react-icons/bs'
 import { BsSun } from 'react-icons/bs'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RiCloseLine } from 'react-icons/ri'
+import logo from '../../assets/header/logo.png'
 
 import './header.css'
 
@@ -12,24 +13,7 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
 
   return (
     <header className='header-container'>
-      <div className='mode-interface-container'>
-        <button
-          className='mode-control-button'
-          onClick={() => setIsLightModeOn(!isLightModeOn)}
-        >
-          {isLightModeOn ? (
-            <div>
-              <BsSun size={25} />
-              <p>Light-mode on</p>
-            </div>
-          ) : (
-            <div>
-              <BsMoonStarsFill size={20} />
-              <p>Dark-mode on</p>
-            </div>
-          )}
-        </button>
-      </div>
+      <a href='/'><img src={logo} alt="logo" width={32} height={32} /></a>
       <nav>
         <ul
           className={
@@ -116,6 +100,22 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
           )}
         </button>
       </nav>
+      <button
+          className='mode-control-button'
+          onClick={() => setIsLightModeOn(!isLightModeOn)}
+        >
+          {isLightModeOn ? (
+            <div>
+              <BsSun size={25} />
+              {/* <p>Light-mode on</p> */}
+            </div>
+          ) : (
+            <div>
+              <BsMoonStarsFill size={20} />
+              {/* <p>Dark-mode on</p> */}
+            </div>
+          )}
+        </button>
     </header>
   )
 }

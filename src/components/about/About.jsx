@@ -1,6 +1,6 @@
 import React from 'react'
-import hero from '../../assets/hero/hero-image-light.jpeg'
-import darkHero from '../../assets/hero/hero-image-dark.jpeg'
+import hero from '../../assets/hero/hero-image-light.webp'
+import darkHero from '../../assets/hero/hero-image-dark.webp'
 
 import { Contacts } from '../contacts/Contacts'
 import CV from '../../assets/CV/CV.pdf'
@@ -15,12 +15,12 @@ export const About = ({isLightModeOn}) => {
         <h2 className='hero-greeting-title'>I am Sergii</h2>
         <h1 className='hero-title'>I enjoy the development of web solutions</h1>
         <Contacts />
-        <a href={CV} download className='download-CV box-shadow'>
+        <a href={CV} download className='download-CV box-shadow' >
           <p>Download CV</p>
           <RiDownload2Line size={24} />
         </a>
       </div>
-      <div className='hero-image-container box-shadow'>
+      <div className='hero-image-container box-shadow' >
         <img className='hero-image' src={isLightModeOn ? hero : darkHero} alt='Sergii' />
       </div>
     </section>

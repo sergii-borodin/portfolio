@@ -23,7 +23,7 @@ export const Contacts = () => {
         </a>
       </li>
       <li>
-        <a href='mailto:sergii.borodin@yahoo.com' class='contactLink'>
+        <a href='mailto:sergii.borodin@yahoo.com' className='contactLink'>
           <MdOutlineAlternateEmail size={40} />
         </a>
       </li>

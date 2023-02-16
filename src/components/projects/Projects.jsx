@@ -1,5 +1,6 @@
 import React from 'react'
-import {projects} from '../../data/projects'
+
+import { projects } from '../../data/projects'
 
 import './projects.css'
 
@@ -16,7 +17,7 @@ export const Projects = () => {
                 <img className='project-card-image' src={src} alt={title} />
                 <div className='project-overlay'>
                   <h3 className='project-title'>{title}</h3>
-                  <p className={description ? 'project-description' : 'alert'}>{description ?? `Warning... Oops, the demonstration of this website temporary unavailable. We are working on deploying the ${title} on another hosting platform. Sorry for inconvenience`}</p>
+                  <p className={description ? 'project-description' : 'alert'}>{description ?? `Warning... Oops, the demonstration of this website temporary unavailable. I'm working on deploying the ${title} on another hosting platform. Sorry for inconvenience, but you still can check out my code contribution in the project`}</p>
                 </div>
               </div>
               <div className='project-card-interface'>
