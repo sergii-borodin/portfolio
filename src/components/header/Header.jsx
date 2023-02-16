@@ -13,7 +13,7 @@ export const Header = ({ setIsLightModeOn, isLightModeOn }) => {
 
   return (
     <header className='header-container'>
-      <a href='/'><img src={logo} alt="logo" width={32} height={32} /></a>
+      <a href='./'><img src={logo} alt="logo" width={32} height={32} /></a>
       <nav>
         <ul
           className={
