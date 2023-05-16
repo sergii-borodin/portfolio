@@ -2,6 +2,8 @@ import project2 from '../assets/projects/meal-sharing.jpg';
 import project1 from '../assets/projects/kaospilot-toolbox.jpg';
 import project3 from '../assets/projects/ice-cream-shop.jpg';
 import project4 from '../assets/projects/filmoteka.jpg';
+import project5 from '../assets/projects/phonebook.jpg';
+import project6 from '../assets/projects/image-finder.jpg';
 
 export const projects = [
   {
@@ -17,7 +19,7 @@ export const projects = [
     src: project2,
     title: 'Meal-Sharing',
     description:
-      'It is a test project to practice HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, Docker, and KnexJS. Meal-Sharing is an app where everybody can create an event to share a meal with some random people. Everybody can join if there are enough available places. In this project, I built the backend and frontend self.',
+      'It is a test project to practice HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, Docker, KnexJS and Postman. In this project I was practicing to build API. Do not judge me for poor styling. Meal-Sharing is an app where everybody can create an event to share a meal with some random people. Everybody can join if there are enough available places. In this project, I built the backend and frontend self.',
     demoLink: 'https://meal-sharing-class21-sergii.herokuapp.com/',
     codeLink: 'https://github.com/sergii-borodin/meal-sharing',
   },
@@ -40,5 +42,23 @@ export const projects = [
       'https://malakhow-alexandr.github.io/filmoteka-landing__team-work/',
     codeLink:
       'https://github.com/Malakhow-Alexandr/filmoteka-landing__team-work',
+  },
+  {
+    id: 5,
+    src: project5,
+    title: 'Phonebook',
+    description:
+      'Phone book app made for learning sync Redux Toolkit. No sense to use it in such a small app global state management library. Implemented just for practice.',
+    demoLink: 'https://sergii-borodin.github.io/goit-react-hw-06-phonebook/',
+    codeLink: 'https://github.com/sergii-borodin/goit-react-hw-06-phonebook',
+  },
+  {
+    id: 6,
+    src: project6,
+    title: 'image-finder',
+    description:
+      'Image-finder is a small project made using React.js using Pixabay API',
+    demoLink: 'https://sergii-borodin.github.io/goit-react-hw-06-phonebook/',
+    codeLink: 'https://sergii-borodin.github.io/goit-react-hw-04-images/',
   },
 ];
