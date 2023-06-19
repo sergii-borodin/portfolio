@@ -57,8 +57,8 @@ export const projects = [
     src: project6,
     title: 'image-finder',
     description:
-      'Image-finder is a small project made using React.js using Pixabay API',
-    demoLink: 'https://sergii-borodin.github.io/goit-react-hw-06-phonebook/',
-    codeLink: 'https://sergii-borodin.github.io/goit-react-hw-04-images/',
+      'Image-finder is a small project made using React.js using Pixabay API, used state machine design pattern, styled-components for styling, propTypes - runtime type checking for React props and similar objects, Axios ',
+    demoLink: 'https://sergii-borodin.github.io/goit-react-hw-04-images/',
+    codeLink: 'https://github.com/sergii-borodin/goit-react-hw-04-images',
   },
 ];
