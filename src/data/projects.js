@@ -1,18 +1,20 @@
 import project2 from '../assets/projects/meal-sharing.jpg';
-import project1 from '../assets/projects/kaospilot-toolbox.jpg';
+import project1 from '../assets/projects/car-catalog.jpg';
 import project3 from '../assets/projects/ice-cream-shop.jpg';
 import project4 from '../assets/projects/filmoteka.jpg';
 import project5 from '../assets/projects/phonebook.jpg';
 import project6 from '../assets/projects/image-finder.jpg';
+import project7 from '../assets/projects/kaospilot-toolbox.jpg';
 
 export const projects = [
   {
     id: 1,
     src: project1,
-    title: 'Kaospilot-toolbox',
-    // description: 'To build this project we used HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, KnexJS, Storybook, Docker and Swagger. During this project I was responsible to create filtering logic, combining frontend and backend, making more exposed composition, creating smart components and dump components, working with styling. It was a close-to real-world product-building process using modern agile scrum methodology.',
-    demoLink: 'https://staging-kp-toolbox-fp-class21.herokuapp.com/',
-    codeLink: 'https://github.com/HackYourFuture-CPH/kp-toolbox-fp-class21',
+    title: 'CarTale',
+    description:
+      'The project aim is to explore the Power of Next.js framework and its benefits in web application development. The application was built using Typescript, Tailwind CSS and Headless UI. As a backend, I used two open APIs. This project focuses on exploring and harnessing the key features and advantages that Next.js brings to the table. These include server-side rendering (SSR), static site generation (SSG), automatic code splitting, seamless client-side navigation(will create more pages soon), and TypeScript support. The project will involve developing a web application using Next.js, taking advantage of these powerful features to create a high-performance, scalable, and interactive user interface.',
+    demoLink: 'https://cars-catalog.vercel.app/',
+    codeLink: 'https://github.com/sergii-borodin/cars_catalog',
   },
   {
     id: 2,
@@ -60,5 +62,13 @@ export const projects = [
       'Image-finder is a small project made using React.js using Pixabay API, used state machine design pattern, styled-components for styling, propTypes - runtime type checking for React props and similar objects, Axios ',
     demoLink: 'https://sergii-borodin.github.io/goit-react-hw-04-images/',
     codeLink: 'https://github.com/sergii-borodin/goit-react-hw-04-images',
+  },
+  {
+    id: 1,
+    src: project7,
+    title: 'Kaospilot-toolbox',
+    // description: 'To build this project we used HTML, CSS, JavaScript, NodeJS, React, MySQL, ExpressJS, KnexJS, Storybook, Docker and Swagger. During this project I was responsible to create filtering logic, combining frontend and backend, making more exposed composition, creating smart components and dump components, working with styling. It was a close-to real-world product-building process using modern agile scrum methodology.',
+    demoLink: 'https://staging-kp-toolbox-fp-class21.herokuapp.com/',
+    codeLink: 'https://github.com/HackYourFuture-CPH/kp-toolbox-fp-class21',
   },
 ];
