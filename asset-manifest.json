@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.11b6c0e9.css",
-    "main.js": "/portfolio/static/js/main.55361630.js",
+    "main.js": "/portfolio/static/js/main.2563e773.js",
     "static/media/hero-image-light.webp": "/portfolio/static/media/hero-image-light.b6d4a5730cf7695e1798.webp",
     "static/media/kaospilot-toolbox.jpg": "/portfolio/static/media/kaospilot-toolbox.d5e31e3700e953498ef4.jpg",
     "static/media/hero-image-dark.jpeg": "/portfolio/static/media/hero-image-dark.78227d7900742be2cb3f.jpeg",
     "static/media/meal-sharing.jpg": "/portfolio/static/media/meal-sharing.917286501f30f7cdae6d.jpg",
     "static/media/image-finder.jpg": "/portfolio/static/media/image-finder.3c1ad8565b255bb915a5.jpg",
-    "static/media/CV.pdf": "/portfolio/static/media/CV.50cf5834f62d45c81b84.pdf",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.d2b830598d5312e5aff8.pdf",
     "static/media/car-catalog.jpg": "/portfolio/static/media/car-catalog.12b7ac508aeadf6ee48a.jpg",
     "static/media/filmoteka.jpg": "/portfolio/static/media/filmoteka.e049a7fc3e9928f803e4.jpg",
     "static/media/ice-cream-shop.jpg": "/portfolio/static/media/ice-cream-shop.e37c9daaa4b6140a8632.jpg",
@@ -22,10 +22,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.11b6c0e9.css.map": "/portfolio/static/css/main.11b6c0e9.css.map",
-    "main.55361630.js.map": "/portfolio/static/js/main.55361630.js.map"
+    "main.2563e773.js.map": "/portfolio/static/js/main.2563e773.js.map"
   },
   "entrypoints": [
     "static/css/main.11b6c0e9.css",
-    "static/js/main.55361630.js"
+    "static/js/main.2563e773.js"
   ]
 }
