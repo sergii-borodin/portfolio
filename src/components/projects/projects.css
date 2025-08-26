@@ -54,10 +54,16 @@
 }
 
 .project-title {
-  margin-bottom: 2rem;
+  font-size: x-large;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 300;
+}
+
+.project-about {
+  font-size: small;
+  font-weight: 200;
+  margin-bottom: 2rem;
 }
 
 .project-description {

@@ -7,42 +7,58 @@ import './projects.css';
 export const Projects = () => {
   return (
     <section name="projects" className="projects-section-container section">
-      <h2 className="section-title">Projects I was working with</h2>
+      <h2 className="section-title">Projects I built or contributed to</h2>
       <ul className="projects-section">
-        {projects.map(({ id, title, src, description, demoLink, codeLink }) => {
-          return (
-            <li key={id} className="project-card box-shadow">
-              <div className="project-card-image-container">
-                <img className="project-card-image" src={src} alt={title} />
-                <div className="project-overlay">
-                  <h3 className="project-title">{title}</h3>
-                  <p className={description ? 'project-description' : 'alert'}>
-                    {description ??
-                      `Warning... Oops, the demonstration of this website temporary unavailable. I'm working on deploying the ${title} on another hosting platform. Sorry for inconvenience, but you still can check out my code contribution in the project.`}
-                  </p>
+        {projects.map(
+          ({ id, title, about, src, description, demoLink, codeLink }) => {
+            return (
+              <li key={id} className="project-card box-shadow">
+                <div className="project-card-image-container">
+                  <img className="project-card-image" src={src} alt={title} />
+                  <div className="project-overlay">
+                    <h3 className="project-title">{title}</h3>
+                    <p className="project-about">({about})</p>
+                    <p
+                      className={description ? 'project-description' : 'alert'}
+                    >
+                      {description
+                        ? description.split('\n').map((line, i) => (
+                            <span key={i}>
+                              {line}
+                              <br />
+                              <br />
+                            </span>
+                          ))
+                        : `Warning... Oops, the demonstration of this website
+                    temporary unavailable. I'm working on deploying the ${title}{' '}
+                    on another hosting platform. Sorry for inconvenience, but
+                    you still can check out my code contribution in the
+                    project.`}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="project-card-interface">
-                <a
-                  className="project-card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={demoLink}
-                >
-                  Demo
-                </a>
-                <a
-                  className="project-card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={codeLink}
-                >
-                  Code
-                </a>
-              </div>
-            </li>
-          );
-        })}
+                <div className="project-card-interface">
+                  <a
+                    className="project-card-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={demoLink}
+                  >
+                    Demo
+                  </a>
+                  <a
+                    className="project-card-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={codeLink}
+                  >
+                    Code
+                  </a>
+                </div>
+              </li>
+            );
+          }
+        )}
       </ul>
     </section>
   );
