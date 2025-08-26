@@ -65,7 +65,7 @@ export const Experience = () => {
             </article>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://umbraco.com/training/certified-developers/developer/?id=d6b82326-f719-4a77-b00d-ef8685b42229&_ga=2.100984898.238082662.1670886216-960771182.1670886216"
             target="_blank"
@@ -89,7 +89,7 @@ export const Experience = () => {
               </div>
             </article>
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
   );

@@ -46,14 +46,21 @@ export const Projects = () => {
                   >
                     Demo
                   </a>
-                  <a
-                    className="project-card-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={codeLink}
-                  >
-                    Code
-                  </a>
+
+                  {codeLink ? (
+                    <a
+                      className="project-card-button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={codeLink}
+                    >
+                      Code
+                    </a>
+                  ) : (
+                    <span className="project-card-button">
+                      No ACCESS 🛑 Private repo
+                    </span>
+                  )}
                 </div>
               </li>
             );

@@ -29,8 +29,8 @@ export const projects = [
       'Startup based in Copenhagen developing a browser-based implant database designed specifically for radiographers and radiologists.',
     description:
       '- Developed a browser-based implant database using React.js, TypeScript, Node.js, Express.js, and MongoDB. \n - Redesigned UI components, ensuring consistency and improving user experience and responsiveness through modern UX / UI principles. \n - Integrated third - party libraries and APIs, optimizing backend database interactions and server communication',
-    demoLink: 'https://meal-sharing-class21-sergii.herokuapp.com/',
-    codeLink: 'https://github.com/sergii-borodin/meal-sharing',
+    demoLink: 'https://db.nordradiology.com/',
+    codeLink: '',
   },
   {
     id: 3,

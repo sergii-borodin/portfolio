@@ -27,7 +27,7 @@ a:focus {
 
 :root {
   --color-background-dark-mode: rgb(0, 0, 0);
-  --color-background-light-mode: rgb(255, 235, 204);
+  --color-background-light-mode: rgb(252, 245, 227);
 
   --color-primary-dark-mode: rgba(255, 235, 205);
   --color-primary-light-mode: rgb(41, 28, 28);
