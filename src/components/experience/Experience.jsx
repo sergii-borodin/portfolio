@@ -3,8 +3,8 @@ import './experience.css';
 
 import hyf from '../../assets/experience/hyf.png';
 import goit from '../../assets/experience/goit.png';
-const umbraco =
-  'https://umbraco.com/media/h34njgkj/diploma.png?anchor=center&mode=crop&width=1200&height=628&rnd=132720336679870000';
+// const umbraco =
+//   'https://umbraco.com/media/h34njgkj/diploma.png?anchor=center&mode=crop&width=1200&height=628&rnd=132720336679870000';
 
 export const Experience = () => {
   return (

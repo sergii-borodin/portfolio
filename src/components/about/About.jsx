@@ -1,6 +1,6 @@
 import React from 'react';
-import hero from '../../assets/hero/hero-image-light.webp';
-import darkHero from '../../assets/hero/hero-image-dark.jpeg';
+// import hero from '../../assets/hero/hero-image-light.webp';
+// import darkHero from '../../assets/hero/hero-image-dark.jpeg';
 
 import { Contacts } from '../contacts/Contacts';
 import CV from '../../assets/CV/CV.pdf';
