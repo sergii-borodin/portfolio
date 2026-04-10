@@ -1,7 +1,8 @@
-import project1 from '../assets/projects/talkin.jpg';
-import project2 from '../assets/projects/nordinsight.jpg';
-import project3 from '../assets/projects/ice-cream-shop.jpg';
-import project4 from '../assets/projects/filmoteka.jpg';
+import project1 from '../assets/projects/jutlandia.jpg';
+import project2 from '../assets/projects/talkin.jpg';
+import project3 from '../assets/projects/nordinsight.jpg';
+import project4 from '../assets/projects/ice-cream-shop.jpg';
+import project5 from '../assets/projects/filmoteka.jpg';
 // import project5 from '../assets/projects/phonebook.jpg';
 // import project6 from '../assets/projects/image-finder.jpg';
 // import project7 from '../assets/projects/kaospilot-toolbox.jpg';
@@ -12,10 +13,24 @@ export const projects = [
     demo: true,
     code: true,
     src: project1,
+    title: 'Jutlandia',
+    about:
+      'Warehouse management POC built for Jutlandia during an internship, developed primarily with the Angular framework.',
+    description:
+      'A full-featured warehouse management system enabling users to manage warehouses and their storage slots. I built pages covering key workflows including inventory overview, slot booking, deadline tracking, and planning and coordinating moves between warehouses.',
+    demoLink:
+      'https://warehouse-poc-git-main-sergiiborodins-projects.vercel.app/',
+    codeLink: 'https://github.com/sergii-borodin/warehouse-poc',
+  },
+  {
+    id: 1,
+    demo: true,
+    code: true,
+    src: project2,
     title: 'Talkin',
     about: 'PED project',
     description:
-      'LMS SaaS app from scratch featuring user authentication(Clerk integration) using Next.js, Supabase. A real-time teaching platform with Vapi, integrate an AI vocal agent, and deliver interactive learning sessions.integrate an AI vocal agent, and deliver interactive learning sessions',
+      'LMS SaaS app from scratch featuring user authentication(Clerk integration) using Next.js, Supabase. A real-time teaching platform with Vapi, integrate an AI vocal agent, and deliver interactive learning sessions, integrate an AI vocal agent, and deliver interactive learning sessions',
     demoLink: 'https://ai-saas-app-ten-blush.vercel.app/',
     codeLink: 'https://github.com/sergii-borodin/ai_saas_app',
   },
@@ -23,7 +38,7 @@ export const projects = [
     id: 2,
     demo: true,
     code: false,
-    src: project2,
+    src: project3,
     title: 'NordInsight',
     about:
       'Startup based in Copenhagen developing a browser-based implant database designed specifically for radiographers and radiologists.',
@@ -36,7 +51,7 @@ export const projects = [
     id: 3,
     demo: true,
     code: true,
-    src: project3,
+    src: project4,
     title: 'Ice cream web shop',
     about: 'PED project',
 
@@ -49,7 +64,7 @@ export const projects = [
     id: 4,
     demo: true,
     code: true,
-    src: project4,
+    src: project5,
     title: 'Filmoteka',
     about: 'PED project',
     description:
