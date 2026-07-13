@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.30b9acc1.css",
-    "main.js": "/portfolio/static/js/main.586dfce5.js",
+    "main.js": "/portfolio/static/js/main.1973068f.js",
     "static/media/CV.pdf": "/portfolio/static/media/CV.0d8dad4b749d0cc0e7fc.pdf",
     "static/media/filmoteka.jpg": "/portfolio/static/media/filmoteka.6042ebac820d4e943882.jpg",
     "static/media/ice-cream-shop.jpg": "/portfolio/static/media/ice-cream-shop.e37c9daaa4b6140a8632.jpg",
@@ -18,10 +18,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.30b9acc1.css.map": "/portfolio/static/css/main.30b9acc1.css.map",
-    "main.586dfce5.js.map": "/portfolio/static/js/main.586dfce5.js.map"
+    "main.1973068f.js.map": "/portfolio/static/js/main.1973068f.js.map"
   },
   "entrypoints": [
     "static/css/main.30b9acc1.css",
-    "static/js/main.586dfce5.js"
+    "static/js/main.1973068f.js"
   ]
 }
