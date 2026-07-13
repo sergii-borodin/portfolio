@@ -18,8 +18,7 @@ export const projects = [
       'Warehouse management POC built for Jutlandia during an internship, developed primarily with the Angular framework.',
     description:
       'A full-featured warehouse management system enabling users to manage warehouses and their storage slots. I built pages covering key workflows including inventory overview, slot booking, deadline tracking, and planning and coordinating moves between warehouses.',
-    demoLink:
-      'https://warehouse-poc-git-main-sergiiborodins-projects.vercel.app/',
+    demoLink: 'https://warehouse-poc.vercel.app/',
     codeLink: 'https://github.com/sergii-borodin/warehouse-poc',
   },
   {
