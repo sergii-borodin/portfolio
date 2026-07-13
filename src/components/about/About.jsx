@@ -14,12 +14,9 @@ export const About = ({ isLightModeOn }) => {
       <div className="about-title-container">
         <h1 className="hero-greeting-title">Hi, I am Sergii</h1>
         <h2 className="hero-title">
-          {`I am a Software Engineer with experience,
-           building scalable web and mobile solutions.`}
+          Software Engineer with experience building scalable web and mobile
+          solutions.
         </h2>
-        {/* <h2 className="hero-title" style={{ marginBottom: '7rem' }}>
-          building scalable web and mobile solutions.
-        </h2> */}
         <Contacts />
         <a href={CV} download className="download-CV box-shadow">
           <p>Download CV</p>

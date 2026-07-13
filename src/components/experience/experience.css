@@ -1,117 +1,100 @@
 .experience-section {
-  /* padding-top: 7rem; */
+  width: 100%;
+}
+
+.experience-section > ul {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 1.25rem;
+}
+
+.card-link {
+  display: block;
 }
 
 .experience-card {
   display: flex;
-  margin: 3rem auto;
-  max-width: 60rem;
-  height: 16rem;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  overflow: hidden;
 }
 
 .card-image-container {
-  margin: auto;
-  margin-left: 2rem;
+  flex-shrink: 0;
 }
 
 .card-description-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin: 2rem 2rem;
+  gap: 0.75rem;
 }
 
 .card-image {
-  display: block;
-  width: 15rem;
-  height: 10rem;
-  object-fit: cover;
+  width: 10rem;
+  height: 6rem;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
 }
 
 .card-title {
-  margin: 0 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  line-height: 1.5;
 }
 
 .card-description {
-  font-weight: 300;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 980px) {
-  .experience-card {
-    max-width: 40rem;
-  }
+.hover-underline-animation {
+  position: relative;
+  display: inline-block;
+}
 
-  .card-description-container {
-    margin: 1rem 1rem;
-  }
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-hover);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
 
-  .card-image {
-    display: block;
-    width: 15rem;
-    height: 10rem;
-    object-fit: cover;
-  }
-
-  .card-title {
-    font-size: 1rem;
-    margin: 1rem 2rem;
-    letter-spacing: 0.3rem;
-  }
-
-  .card-description {
-    margin: 1rem 1rem;
-  }
+.card-link:hover .hover-underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media screen and (max-width: 660px) {
   .experience-card {
-    display: flex;
     flex-direction: column;
-    margin: 2rem auto;
-    max-width: 27rem;
-    height: 32rem;
-  }
-
-  .card-image-container {
-    margin: auto;
-    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
   }
 
   .card-image {
-    margin-top: 2rem;
-    width: 18rem;
-    height: 12rem;
+    width: 12rem;
+    height: 7rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .experience-card {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    max-width: 22rem;
-    height: 27rem;
-  }
-
-  .card-image {
-    width: 15rem;
-    height: 8rem;
-  }
-
   .card-title {
-    font-size: 0.9rem;
-    letter-spacing: 0.2;
+    font-size: 0.85rem;
   }
 
   .card-description {
-    margin: 0 1rem;
     font-size: 0.8rem;
   }
 }

@@ -55,7 +55,7 @@ export const Skills = () => {
     },
   ];
   return (
-    <section name="skills" className="section container experience-section">
+    <section name="skills" className="section skills-section">
       <h2 className="section-title">My stack and tools</h2>
       <ul className="tools-grid-area">
         {techs.map(({ id, src, title }) => (

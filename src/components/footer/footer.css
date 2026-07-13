@@ -1,17 +1,12 @@
 .footer {
-  height: 6rem;
   display: flex;
-  padding-right: 10rem;
-  padding-left: 10rem;
-  justify-content: space-evenly;
-  border-top: 0.01rem solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border-light);
 }
 
 .dark-mode .footer {
-  border-top: 0.01rem solid white;
-}
-
-.footer-left-side {
-  margin: auto;
-  margin-left: 0;
+  border-top-color: var(--color-border-dark);
 }

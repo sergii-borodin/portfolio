@@ -22,7 +22,7 @@ export const projects = [
     codeLink: 'https://github.com/sergii-borodin/warehouse-poc',
   },
   {
-    id: 1,
+    id: 2,
     demo: true,
     code: true,
     src: project2,
@@ -34,7 +34,7 @@ export const projects = [
     codeLink: 'https://github.com/sergii-borodin/ai_saas_app',
   },
   {
-    id: 2,
+    id: 3,
     demo: true,
     code: false,
     src: project3,
@@ -47,7 +47,7 @@ export const projects = [
     codeLink: '',
   },
   {
-    id: 3,
+    id: 4,
     demo: true,
     code: true,
     src: project4,
@@ -60,7 +60,7 @@ export const projects = [
     codeLink: 'https://github.com/xxAmnesiAxx/itcats',
   },
   {
-    id: 4,
+    id: 5,
     demo: true,
     code: true,
     src: project5,
