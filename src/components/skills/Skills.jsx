@@ -31,7 +31,7 @@ export const Skills = () => {
     {
       id: 4,
       src: reactImage,
-      title: 'ReactJS',
+      title: 'React/React Native',
     },
     {
       id: 5,

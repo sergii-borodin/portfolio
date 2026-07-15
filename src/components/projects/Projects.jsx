@@ -15,6 +15,27 @@ export const Projects = () => {
               <li key={`${id}-${title}`} className="project-card box-shadow">
                 <div className="project-card-image-container">
                   <img className="project-card-image" src={src} alt={title} />
+                  <div className="project-overlay">
+                    <div className="project-overlay-header">
+                      <h3 className="project-title">{title}</h3>
+                      {about && <p className="project-about">{about}</p>}
+                    </div>
+                    <div className="project-overlay-body">
+                      <p
+                        className={description ? 'project-description' : 'alert'}
+                      >
+                        {description
+                          ? description.split('\n').map((line, i) => (
+                              <span key={i}>{line}</span>
+                            ))
+                          : `Warning... Oops, the demonstration of this website
+                    temporary unavailable. I'm working on deploying the ${title}{' '}
+                    on another hosting platform. Sorry for inconvenience, but
+                    you still can check out my code contribution in the
+                    project.`}
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="project-card-interface">
                   <a
@@ -40,27 +61,6 @@ export const Projects = () => {
                       No ACCESS 🛑 Private repo
                     </span>
                   )}
-                </div>
-                <div className="project-overlay">
-                  <div className="project-overlay-header">
-                    <h3 className="project-title">{title}</h3>
-                    {about && <p className="project-about">{about}</p>}
-                  </div>
-                  <div className="project-overlay-body">
-                    <p
-                      className={description ? 'project-description' : 'alert'}
-                    >
-                      {description
-                        ? description.split('\n').map((line, i) => (
-                            <span key={i}>{line}</span>
-                          ))
-                        : `Warning... Oops, the demonstration of this website
-                    temporary unavailable. I'm working on deploying the ${title}{' '}
-                    on another hosting platform. Sorry for inconvenience, but
-                    you still can check out my code contribution in the
-                    project.`}
-                    </p>
-                  </div>
                 </div>
               </li>
             );

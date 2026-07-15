@@ -14,9 +14,12 @@ export const About = ({ isLightModeOn }) => {
       <div className="about-title-container">
         <h1 className="hero-greeting-title">Hi, I am Sergii</h1>
         <h2 className="hero-title">
-          Software Engineer with experience building scalable web and mobile
-          solutions.
+          React ecosystem developer (web & mobile) — Next.js, React Native,
+          TypeScript
         </h2>
+        {/* <p>Ølgod, Denmark → open to Aarhus, Herning, Silkeborg</p> */}
+        {/* <p>No sponsorship needed · Available immediately</p> */}
+        {/* <p>Available immediately</p> */}
         <Contacts />
         <a href={CV} download className="download-CV box-shadow">
           <p>Download CV</p>
