@@ -6,7 +6,7 @@ import {
   Footer,
   Header,
   Skills,
-  Experience,
+  CareerTimeline,
 } from './components/index'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
       <About isLightModeOn={ isLightModeOn} />
       <Skills />
       <Projects />
-      <Experience />
+      <CareerTimeline />
       <Footer />
     </div>
   )

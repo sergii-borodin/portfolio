@@ -12,17 +12,21 @@ export const About = ({ isLightModeOn }) => {
   return (
     <section name="aboutMe" className="section hero-section main-container">
       <div className="about-title-container">
-        <h1 className="hero-greeting-title">Hi, I am Sergii</h1>
+        <h1 className="hero-greeting-title">Hi, I&apos;m Sergii</h1>
         <h2 className="hero-title">
           React ecosystem developer (web & mobile) — Next.js, React Native,
           TypeScript
         </h2>
-        {/* <p>Ølgod, Denmark → open to Aarhus, Herning, Silkeborg</p> */}
-        {/* <p>No sponsorship needed · Available immediately</p> */}
-        {/* <p>Available immediately</p> */}
+        <p className="hero-meta">
+          <span className="hero-meta-segment">
+            Jutland, Denmark → open to Aarhus, Herning, Silkeborg
+          </span>
+          <span className="hero-meta-segment">No sponsorship needed</span>
+          <span className="hero-meta-segment">Available immediately</span>
+        </p>
         <Contacts />
-        <a href={CV} download className="download-CV box-shadow">
-          <p>Download CV</p>
+        <a href={CV} download className="cv-button box-shadow">
+          <span>Download CV</span>
           <RiDownload2Line size={24} />
         </a>
       </div>

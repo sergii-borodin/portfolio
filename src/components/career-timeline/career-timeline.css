@@ -1,0 +1,241 @@
+.career-timeline-section {
+  width: 100%;
+}
+
+.timeline-layout {
+  width: 100%;
+  max-width: 800px;
+}
+
+.timeline-main {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline-main::before {
+  content: '';
+  position: absolute;
+  left: 0.4375rem;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 2px;
+  background: var(--color-border-light);
+}
+
+.dark-mode .timeline-main::before {
+  background: var(--color-border-dark);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item-dot {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  margin-top: 1.125rem;
+  flex-shrink: 0;
+  border: 2px solid var(--color-hover);
+  background: var(--color-background-light-mode);
+  position: relative;
+  z-index: 1;
+}
+
+.dark-mode .timeline-item-dot {
+  background: var(--color-background-dark-mode);
+}
+
+.timeline-item--education .timeline-item-dot {
+  border-color: #4a7fd4;
+}
+
+.timeline-item--internship .timeline-item-dot {
+  border-color: #3d9e6e;
+}
+
+.timeline-item--commercial .timeline-item-dot {
+  border-color: var(--color-hover);
+}
+
+.timeline-item--project .timeline-item-dot {
+  border-color: #8b6cc1;
+}
+
+.timeline-item--certificate .timeline-item-dot {
+  border-color: #8a8a8a;
+}
+
+.timeline-item--mentoring .timeline-item-dot {
+  border-color: #2a9d8f;
+}
+
+.timeline-item-content {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-left: 3px solid transparent;
+}
+
+.timeline-item--education .timeline-item-content {
+  border-left-color: #4a7fd4;
+}
+
+.timeline-item--internship .timeline-item-content {
+  border-left-color: #3d9e6e;
+}
+
+.timeline-item--commercial .timeline-item-content {
+  border-left-color: var(--color-hover);
+}
+
+.timeline-item--project .timeline-item-content {
+  border-left-color: #8b6cc1;
+}
+
+.timeline-item--certificate .timeline-item-content {
+  border-left-color: #8a8a8a;
+}
+
+.timeline-item--mentoring .timeline-item-content {
+  border-left-color: #2a9d8f;
+}
+
+.timeline-item-period {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  opacity: 0.75;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-item-category {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item-category--education {
+  color: #4a7fd4;
+}
+
+.timeline-item-category--internship {
+  color: #3d9e6e;
+}
+
+.timeline-item-category--commercial {
+  color: var(--color-hover);
+}
+
+.timeline-item-category--project {
+  color: #8b6cc1;
+}
+
+.timeline-item-category--certificate {
+  color: #8a8a8a;
+}
+
+.timeline-item-category--mentoring {
+  color: #2a9d8f;
+}
+
+.timeline-item-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-item-location {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-item-stack li {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-light-mode);
+}
+
+.dark-mode .timeline-item-stack li {
+  background: var(--color-accent-dark-mode);
+}
+
+.timeline-item-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.timeline-link-badge {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-light);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.dark-mode .timeline-link-badge {
+  border-color: var(--color-border-dark);
+}
+
+.timeline-link-badge:hover,
+.timeline-link-badge:focus {
+  background-color: var(--color-hover);
+  border-color: var(--color-hover);
+  color: #fff;
+}
+
+.timeline-parallel-badge {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  color: #2a9d8f;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-item-content {
+    padding: 1rem 1.15rem;
+  }
+
+  .timeline-item-title {
+    font-size: 0.88rem;
+  }
+}
