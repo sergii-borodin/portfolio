@@ -7,6 +7,8 @@ export const timelineData = [
     location: 'Aarhus',
     category: 'education',
     track: 'main',
+    link: 'https://www.hackyourfuture.dk/',
+    linkLabel: 'Visit HackYourFuture',
   },
   {
     id: 'goit-academy',
@@ -16,6 +18,8 @@ export const timelineData = [
     location: null,
     category: 'education',
     track: 'main',
+    link: 'https://goit.global/ph/',
+    linkLabel: 'Visit GOIT Academy',
   },
   {
     id: 'hyf-mentor',
@@ -35,6 +39,7 @@ export const timelineData = [
     location: 'Aarhus',
     category: 'internship',
     track: 'main',
+    durationMonths: 5,
     stack: ['React.js', 'Styled-Components'],
   },
   {
@@ -45,6 +50,7 @@ export const timelineData = [
     location: 'Copenhagen',
     category: 'internship',
     track: 'main',
+    durationMonths: 5,
     stack: [
       'React.js',
       'Next.js',
@@ -71,6 +77,7 @@ export const timelineData = [
     location: 'Kolding',
     category: 'commercial',
     track: 'main',
+    durationMonths: 17,
     stack: ['React Native', 'Expo', 'TypeScript', 'Redux', 'FCM', 'S3'],
     link: null,
   },
@@ -103,6 +110,7 @@ export const timelineData = [
     location: 'Esbjerg',
     category: 'internship',
     track: 'main',
+    durationMonths: 2,
     stack: ['Angular', 'Cursor'],
   },
   {
