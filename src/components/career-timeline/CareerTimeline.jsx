@@ -29,13 +29,13 @@ const SUMMARY_LABELS = {
   certificate: 'Certificates',
 };
 
-function shortEntryName(entry) {
-  if (entry.title.includes(',')) {
-    return entry.title.split(',')[1].trim().split('(')[0].trim();
-  }
+// function shortEntryName(entry) {
+//   if (entry.title.includes(',')) {
+//     return entry.title.split(',')[1].trim().split('(')[0].trim();
+//   }
 
-  return entry.title.split('—')[0].trim();
-}
+//   return entry.title.split('—')[0].trim();
+// }
 
 function formatDuration(totalMonths) {
   if (totalMonths < 12) {
@@ -136,13 +136,13 @@ function TimelineItem({ entry, showParallelBadge = false }) {
   );
 }
 
-function getSummarySubtitle(category, categoryCounts, categorySubtitles) {
-  if (category === 'mentoring' && categoryCounts[category] === 1) {
-    return 'Ongoing';
-  }
+// function getSummarySubtitle(category, categoryCounts, categorySubtitles) {
+//   if (category === 'mentoring' && categoryCounts[category] === 1) {
+//     return 'Ongoing';
+//   }
 
-  return categorySubtitles[category].join(' · ');
-}
+//   return categorySubtitles[category].join(' · ');
+// }
 
 export const CareerTimeline = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -156,15 +156,15 @@ export const CareerTimeline = () => {
     }, {});
   }, []);
 
-  const categorySubtitles = useMemo(() => {
-    return getAllEntries().reduce((subtitles, entry) => {
-      if (!subtitles[entry.category]) {
-        subtitles[entry.category] = [];
-      }
-      subtitles[entry.category].push(shortEntryName(entry));
-      return subtitles;
-    }, {});
-  }, []);
+  // const categorySubtitles = useMemo(() => {
+  //   return getAllEntries().reduce((subtitles, entry) => {
+  //     if (!subtitles[entry.category]) {
+  //       subtitles[entry.category] = [];
+  //     }
+  //     subtitles[entry.category].push(shortEntryName(entry));
+  //     return subtitles;
+  //   }, {});
+  // }, []);
 
   const categoryDurations = useMemo(() => {
     return getAllEntries().reduce((durations, entry) => {
