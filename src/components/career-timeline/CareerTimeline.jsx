@@ -192,7 +192,6 @@ export const CareerTimeline = () => {
     setActiveFilter(category);
   };
 
-  const totalEntries = displayEntries.length;
   const timelineRange = '2021 – present';
 
   return (
@@ -213,7 +212,6 @@ export const CareerTimeline = () => {
             aria-pressed={activeFilter === 'all'}
             onClick={() => handleSummaryClick('all')}
           >
-            <span className="timeline-summary-count"></span>
             <span className="timeline-summary-label">Full timeline</span>
             <span className="timeline-summary-subtitle">
               {timelineRange} · chronological
