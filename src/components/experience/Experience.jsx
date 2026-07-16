@@ -10,7 +10,7 @@ export const Experience = () => {
   return (
     <section name="experience" className="section experience-section">
       <h2 className="section-title">Experience & Bootcamps</h2>
-      <ul>
+      <ul className="section-content">
         <li>
           <a
             href="https://goit.ua/"

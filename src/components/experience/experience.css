@@ -3,8 +3,6 @@
 }
 
 .experience-section > ul {
-  width: 100%;
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;

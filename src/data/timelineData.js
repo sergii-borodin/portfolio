@@ -29,7 +29,7 @@ export const timelineData = [
     title: 'Volunteer Mentor, HackYourFuture Aarhus',
     location: 'Aarhus',
     category: 'mentoring',
-    track: 'parallel',
+    track: 'main',
   },
   {
     id: 'uno-econetwork',

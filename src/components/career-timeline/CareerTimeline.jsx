@@ -24,7 +24,7 @@ const SUMMARY_LABELS = {
   internship: 'Internships',
   commercial: 'Commercial',
   mentoring: 'Mentoring',
-  project: 'Projects',
+  project: 'Hobby Projects',
   education: 'Education',
   certificate: 'Certificates',
 };
@@ -198,7 +198,7 @@ export const CareerTimeline = () => {
     <section name="experience" className="section career-timeline-section">
       <h2 className="section-title">Experience &amp; Education</h2>
 
-      <div className="timeline-layout">
+      <div className="timeline-layout section-content">
         <div
           className="timeline-summary"
           role="group"
@@ -244,13 +244,13 @@ export const CareerTimeline = () => {
                     {formatDuration(categoryDurations[category])} total
                   </span>
                 )}
-              <span className="timeline-summary-subtitle">
+              {/* <span className="timeline-summary-subtitle">
                 {getSummarySubtitle(
                   category,
                   categoryCounts,
                   categorySubtitles
                 )}
-              </span>
+              </span> */}
             </button>
           ))}
         </div>

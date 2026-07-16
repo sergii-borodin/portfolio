@@ -3,7 +3,6 @@
 }
 
 .about-title-container {
-  max-width: 740px;
   display: flex;
   flex-direction: column;
   align-items: center;

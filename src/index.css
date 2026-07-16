@@ -55,6 +55,9 @@ a:focus {
   --transition-base: 0.3s ease;
 
   --header-height: 4.5rem;
+
+  --section-max-width: 1200px;
+  --section-content-width: 960px;
 }
 
 html {
@@ -127,12 +130,18 @@ body {
 }
 
 .section {
-  max-width: 1200px;
+  max-width: var(--section-max-width);
   margin: 0 auto;
   padding: calc(var(--header-height) + 1.5rem) 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section-content {
+  width: 100%;
+  max-width: var(--section-content-width);
+  margin-inline: auto;
 }
 
 .section-title {

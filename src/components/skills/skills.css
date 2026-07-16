@@ -6,9 +6,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  width: 100%;
-  max-width: 880px;
-  margin: 0 auto;
 }
 
 .tool-card {
@@ -34,7 +31,6 @@
   .tools-grid-area {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    max-width: 100%;
   }
 
   .tool-card {

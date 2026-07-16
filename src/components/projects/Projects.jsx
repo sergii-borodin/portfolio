@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <section name="projects" className="projects-section-container section">
       <h2 className="section-title">Projects I built or contributed to</h2>
-      <ul className="projects-section">
+      <ul className="projects-section section-content">
         {projects.map(
           ({ id, title, about, src, description, demoLink, codeLink }) => {
             return (

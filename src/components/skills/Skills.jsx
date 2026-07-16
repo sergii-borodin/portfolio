@@ -57,7 +57,7 @@ export const Skills = () => {
   return (
     <section name="skills" className="section skills-section">
       <h2 className="section-title">My stack and tools</h2>
-      <ul className="tools-grid-area">
+      <ul className="tools-grid-area section-content">
         {techs.map(({ id, src, title }) => (
           <li className="tool-card box-shadow" key={id}>
             <img className="tool-image" src={src} alt="" />
