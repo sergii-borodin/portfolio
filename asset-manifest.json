@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e5a3ac6f.css",
-    "main.js": "/portfolio/static/js/main.07c8f752.js",
+    "main.css": "/portfolio/static/css/main.a005c185.css",
+    "main.js": "/portfolio/static/js/main.7bd50929.js",
     "static/media/CV.pdf": "/portfolio/static/media/CV.0d8dad4b749d0cc0e7fc.pdf",
     "static/media/filmoteka.jpg": "/portfolio/static/media/filmoteka.6042ebac820d4e943882.jpg",
     "static/media/ice-cream-shop.jpg": "/portfolio/static/media/ice-cream-shop.e37c9daaa4b6140a8632.jpg",
@@ -15,12 +15,16 @@
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/git.png": "/portfolio/static/media/git.db538452a3fb6ffbc088.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/mongodb.svg": "/portfolio/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg",
     "index.html": "/portfolio/index.html",
-    "main.e5a3ac6f.css.map": "/portfolio/static/css/main.e5a3ac6f.css.map",
-    "main.07c8f752.js.map": "/portfolio/static/js/main.07c8f752.js.map"
+    "static/media/nextjs.svg": "/portfolio/static/media/nextjs.2eee3ad3059ff52c5e34c5249e2da540.svg",
+    "static/media/tailwind.svg": "/portfolio/static/media/tailwind.8b3f5baf8ad130d320c59560114d0684.svg",
+    "static/media/expo.svg": "/portfolio/static/media/expo.78e9ce8cc883da1daaa42bcda6adca4f.svg",
+    "main.a005c185.css.map": "/portfolio/static/css/main.a005c185.css.map",
+    "main.7bd50929.js.map": "/portfolio/static/js/main.7bd50929.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5a3ac6f.css",
-    "static/js/main.07c8f752.js"
+    "static/css/main.a005c185.css",
+    "static/js/main.7bd50929.js"
   ]
 }
