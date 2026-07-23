@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a005c185.css",
-    "main.js": "/portfolio/static/js/main.599f0f66.js",
+    "main.js": "/portfolio/static/js/main.d77f3f5e.js",
     "static/media/filmoteka.jpg": "/portfolio/static/media/filmoteka.6042ebac820d4e943882.jpg",
     "static/media/ice-cream-shop.jpg": "/portfolio/static/media/ice-cream-shop.e37c9daaa4b6140a8632.jpg",
     "static/media/jutlandia.jpg": "/portfolio/static/media/jutlandia.07574b761450bdb94ceb.jpg",
     "static/media/nordinsight.jpg": "/portfolio/static/media/nordinsight.e54c6296a11771307e22.jpg",
-    "static/media/CV.pdf": "/portfolio/static/media/CV.f607a06c770ebd9507ea.pdf",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.5eaa23b2750207922ff2.pdf",
     "static/media/talkin.jpg": "/portfolio/static/media/talkin.e9f26bbff1a1cdd80385.jpg",
     "static/media/sql.png": "/portfolio/static/media/sql.0090a77e30cd431e1988.png",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -21,10 +21,10 @@
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.8b3f5baf8ad130d320c59560114d0684.svg",
     "static/media/expo.svg": "/portfolio/static/media/expo.78e9ce8cc883da1daaa42bcda6adca4f.svg",
     "main.a005c185.css.map": "/portfolio/static/css/main.a005c185.css.map",
-    "main.599f0f66.js.map": "/portfolio/static/js/main.599f0f66.js.map"
+    "main.d77f3f5e.js.map": "/portfolio/static/js/main.d77f3f5e.js.map"
   },
   "entrypoints": [
     "static/css/main.a005c185.css",
-    "static/js/main.599f0f66.js"
+    "static/js/main.d77f3f5e.js"
   ]
 }
