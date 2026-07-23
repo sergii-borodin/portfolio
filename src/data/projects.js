@@ -3,11 +3,25 @@ import project2 from '../assets/projects/talkin.jpg';
 import project3 from '../assets/projects/nordinsight.jpg';
 import project4 from '../assets/projects/ice-cream-shop.jpg';
 import project5 from '../assets/projects/filmoteka.jpg';
+import project6 from '../assets/projects/padel-events-platform.png';
 // import project5 from '../assets/projects/phonebook.jpg';
 // import project6 from '../assets/projects/image-finder.jpg';
 // import project7 from '../assets/projects/kaospilot-toolbox.jpg';
 
 export const projects = [
+  {
+    id: 6,
+    demo: true,
+    code: true,
+    src: project6,
+    title: 'Padel Event Booking Platform',
+    about: 'Personal project · in progress · Apr 2026 – present',
+    description:
+      '- Full-stack booking platform for padel events and court reservations — Next.js 15 App Router, server actions, protected routes, complete booking management system. \n - Firebase Auth (session cookie flow), MongoDB + Mongoose for data modelling. \n - Stack: Next.js 15, TypeScript, MongoDB, Mongoose, Firebase Auth, Tailwind',
+    demoLink:
+      'https://padel-events-platform-kdwre6yev-sergiiborodins-projects.vercel.app/',
+    codeLink: 'https://github.com/sergii-borodin/padel-events-platform',
+  },
   {
     id: 1,
     demo: true,
