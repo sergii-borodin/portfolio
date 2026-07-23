@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a005c185.css",
-    "main.js": "/portfolio/static/js/main.d77f3f5e.js",
+    "main.css": "/portfolio/static/css/main.e02f8d7a.css",
+    "main.js": "/portfolio/static/js/main.8af74e89.js",
     "static/media/filmoteka.jpg": "/portfolio/static/media/filmoteka.6042ebac820d4e943882.jpg",
     "static/media/ice-cream-shop.jpg": "/portfolio/static/media/ice-cream-shop.e37c9daaa4b6140a8632.jpg",
     "static/media/jutlandia.jpg": "/portfolio/static/media/jutlandia.07574b761450bdb94ceb.jpg",
     "static/media/nordinsight.jpg": "/portfolio/static/media/nordinsight.e54c6296a11771307e22.jpg",
+    "static/media/padel-events-platform.png": "/portfolio/static/media/padel-events-platform.1ea13e7314344055d41a.png",
     "static/media/CV.pdf": "/portfolio/static/media/CV.5eaa23b2750207922ff2.pdf",
     "static/media/talkin.jpg": "/portfolio/static/media/talkin.e9f26bbff1a1cdd80385.jpg",
     "static/media/sql.png": "/portfolio/static/media/sql.0090a77e30cd431e1988.png",
@@ -20,11 +21,11 @@
     "static/media/nextjs.svg": "/portfolio/static/media/nextjs.2eee3ad3059ff52c5e34c5249e2da540.svg",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.8b3f5baf8ad130d320c59560114d0684.svg",
     "static/media/expo.svg": "/portfolio/static/media/expo.78e9ce8cc883da1daaa42bcda6adca4f.svg",
-    "main.a005c185.css.map": "/portfolio/static/css/main.a005c185.css.map",
-    "main.d77f3f5e.js.map": "/portfolio/static/js/main.d77f3f5e.js.map"
+    "main.e02f8d7a.css.map": "/portfolio/static/css/main.e02f8d7a.css.map",
+    "main.8af74e89.js.map": "/portfolio/static/js/main.8af74e89.js.map"
   },
   "entrypoints": [
-    "static/css/main.a005c185.css",
-    "static/js/main.d77f3f5e.js"
+    "static/css/main.e02f8d7a.css",
+    "static/js/main.8af74e89.js"
   ]
 }
