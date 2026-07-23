@@ -53,6 +53,27 @@ function formatDuration(totalMonths) {
   return `~${yearLabel} ${months} mo`;
 }
 
+function getEntrySortYear(entry) {
+  return entry.year ?? 0;
+}
+
+function sortTimelineEntries(entries, sortOrder) {
+  const indexed = entries.map((item, index) => ({ item, index }));
+
+  indexed.sort((a, b) => {
+    const yearDiff = getEntrySortYear(b.item.entry) - getEntrySortYear(a.item.entry);
+
+    if (yearDiff !== 0) {
+      return sortOrder === 'newest' ? yearDiff : -yearDiff;
+    }
+
+    const indexDiff = b.index - a.index;
+    return sortOrder === 'newest' ? indexDiff : -indexDiff;
+  });
+
+  return indexed.map(({ item }) => item);
+}
+
 function buildDisplayEntries() {
   const items = [];
 
@@ -146,6 +167,7 @@ function TimelineItem({ entry, showParallelBadge = false }) {
 
 export const CareerTimeline = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [sortOrder, setSortOrder] = useState('newest');
 
   const displayEntries = useMemo(() => buildDisplayEntries(), []);
 
@@ -179,14 +201,15 @@ export const CareerTimeline = () => {
   }, []);
 
   const filteredEntries = useMemo(() => {
-    if (activeFilter === 'all') {
-      return displayEntries;
-    }
+    const entries =
+      activeFilter === 'all'
+        ? displayEntries
+        : displayEntries.filter(
+            ({ entry }) => entry.category === activeFilter
+          );
 
-    return displayEntries.filter(
-      ({ entry }) => entry.category === activeFilter
-    );
-  }, [activeFilter, displayEntries]);
+    return sortTimelineEntries(entries, sortOrder);
+  }, [activeFilter, displayEntries, sortOrder]);
 
   const handleSummaryClick = category => {
     setActiveFilter(category);
@@ -213,9 +236,7 @@ export const CareerTimeline = () => {
             onClick={() => handleSummaryClick('all')}
           >
             <span className="timeline-summary-label">Full timeline</span>
-            <span className="timeline-summary-subtitle">
-              {timelineRange} · chronological
-            </span>
+            <span className="timeline-summary-subtitle">{timelineRange}</span>
           </button>
 
           {SUMMARY_CATEGORIES.filter(
@@ -253,6 +274,34 @@ export const CareerTimeline = () => {
               </span> */}
             </button>
           ))}
+        </div>
+
+        <div
+          className="timeline-sort"
+          role="group"
+          aria-label="Timeline sort order"
+        >
+          <span className="timeline-sort-label">Sort by</span>
+          <button
+            type="button"
+            className={`timeline-sort-button${
+              sortOrder === 'newest' ? ' timeline-sort-button--active' : ''
+            }`}
+            aria-pressed={sortOrder === 'newest'}
+            onClick={() => setSortOrder('newest')}
+          >
+            Newest first
+          </button>
+          <button
+            type="button"
+            className={`timeline-sort-button${
+              sortOrder === 'oldest' ? ' timeline-sort-button--active' : ''
+            }`}
+            aria-pressed={sortOrder === 'oldest'}
+            onClick={() => setSortOrder('oldest')}
+          >
+            Oldest first
+          </button>
         </div>
 
         <ol className="timeline-main" aria-label="Career timeline">

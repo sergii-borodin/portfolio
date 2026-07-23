@@ -33,7 +33,7 @@ export const timelineData = [
   },
   {
     id: 'uno-econetwork',
-    period: 'Mar – Jul 2023',
+    period: 'Jan – June 2023',
     year: 2023,
     title: 'Frontend Developer, UNO econetwork',
     location: 'Aarhus',
@@ -112,6 +112,8 @@ export const timelineData = [
     track: 'main',
     durationMonths: 2,
     stack: ['Angular', 'Cursor'],
+    link: 'https://warehouse-poc.vercel.app/',
+    repo: 'https://github.com/sergii-borodin/warehouse-poc',
   },
   {
     id: 'padel-platform',
@@ -122,8 +124,8 @@ export const timelineData = [
     category: 'project',
     track: 'main',
     stack: ['Next.js 15', 'TypeScript', 'MongoDB', 'Firebase Auth'],
+    link: 'https://padel-events-platform-kdwre6yev-sergiiborodins-projects.vercel.app/',
     repo: 'https://github.com/sergii-borodin/padel-events-platform',
-    link: null,
   },
 ];
 
