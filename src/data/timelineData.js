@@ -104,7 +104,7 @@ export const timelineData = [
   },
   {
     id: 'jutlandia',
-    period: 'Oct – Nov 2025',
+    period: 'Sep – Oct 2025',
     year: 2025,
     title: 'Software Developer, Jutlandia (municipal internship)',
     location: 'Esbjerg',
@@ -124,7 +124,7 @@ export const timelineData = [
     category: 'project',
     track: 'main',
     stack: ['Next.js 15', 'TypeScript', 'MongoDB', 'Firebase Auth'],
-    link: 'https://padel-events-platform-kdwre6yev-sergiiborodins-projects.vercel.app/',
+    link: 'https://padel-events-platform.vercel.app/',
     repo: 'https://github.com/sergii-borodin/padel-events-platform',
   },
 ];
