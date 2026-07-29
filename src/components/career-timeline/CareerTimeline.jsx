@@ -61,7 +61,8 @@ function sortTimelineEntries(entries, sortOrder) {
   const indexed = entries.map((item, index) => ({ item, index }));
 
   indexed.sort((a, b) => {
-    const yearDiff = getEntrySortYear(b.item.entry) - getEntrySortYear(a.item.entry);
+    const yearDiff =
+      getEntrySortYear(b.item.entry) - getEntrySortYear(a.item.entry);
 
     if (yearDiff !== 0) {
       return sortOrder === 'newest' ? yearDiff : -yearDiff;
@@ -188,6 +189,15 @@ export const CareerTimeline = () => {
   //   }, {});
   // }, []);
 
+  const totalDuration = useMemo(() => {
+    return getAllEntries().reduce((total, entry) => {
+      if (!entry.durationMonths) {
+        return total;
+      }
+      return total + entry.durationMonths;
+    }, 0);
+  }, []);
+
   const categoryDurations = useMemo(() => {
     return getAllEntries().reduce((durations, entry) => {
       if (!entry.durationMonths) {
@@ -204,9 +214,7 @@ export const CareerTimeline = () => {
     const entries =
       activeFilter === 'all'
         ? displayEntries
-        : displayEntries.filter(
-            ({ entry }) => entry.category === activeFilter
-          );
+        : displayEntries.filter(({ entry }) => entry.category === activeFilter);
 
     return sortTimelineEntries(entries, sortOrder);
   }, [activeFilter, displayEntries, sortOrder]);
@@ -236,6 +244,9 @@ export const CareerTimeline = () => {
             onClick={() => handleSummaryClick('all')}
           >
             <span className="timeline-summary-label">Full timeline</span>
+            <span className="timeline-summary-duration">
+              {formatDuration(totalDuration)} total
+            </span>
             <span className="timeline-summary-subtitle">{timelineRange}</span>
           </button>
 
